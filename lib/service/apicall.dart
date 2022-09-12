@@ -7,11 +7,13 @@ const apikey = "11809FF4-584A-436A-B378-E73311040BB1";
 
 class Apikeyconstant {}
 
-//need  to create a logic to call different crypto data to the ui with the same api requestclass
 class HttpClient {
   Future getcoinapidata(String selectedcurrency) async {
+    //need  to create a logic to call different crypto data to the ui with the same api requestclass
+
     Map<String, String> cryptoPrices = {};
     for (String cryptosymbol in Fiatandcryptolist().currenciesList) {
+      //
       var url =
           "https://rest.coinapi.io/v1/exchangerate/$cryptosymbol/$selectedcurrency?apikey=";
       //api url
