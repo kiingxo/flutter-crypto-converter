@@ -9,7 +9,7 @@ class Apikeyconstant {}
 
 class HttpClient {
   Future getcoinapidata(String selectedcurrency) async {
-    //need  to create a logic to call different crypto data to the ui with the same api requestclass
+    //need  to create a logic to call different crypto data to the ui with this class
 
     Map<String, String> cryptoPrices = {};
     for (String cryptosymbol in Fiatandcryptolist().currenciesList) {
