@@ -3,8 +3,6 @@ import 'package:bitcointracker/service/apicall.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -16,7 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String selectedCurrency = 'USD';
   String coinprice = 'loading ';
 
-//logic to get currency list
+//logic to get currency list from seperate file
   List<Widget> getCurrency() {
     List<Widget> currencyitems = <Widget>[];
     for (int i = 0; i < Fiatandcryptolist().currenciesList.length; i++) {
